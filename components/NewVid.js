@@ -62,7 +62,7 @@ export default function NewVid() {
           <Text style={{ paddingVertical: 10 }}>Video title: </Text>
           <TextInput
             placeholder="Enter video title"
-            onChangeText={(newText) => setTi(newText)}
+            onChangeText={(newText) => setTitle(newText)}
           />
         </View>
 
@@ -104,7 +104,7 @@ export default function NewVid() {
         </View>
       </View>
       <View>
-        <Button color="#841584" title="Add data" />
+        <Button color="#841584" title="Add data" onPress={addVideoDataToRedux}/>
       </View>
     </SafeAreaView>
   );

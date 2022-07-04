@@ -13,9 +13,6 @@ export default function AssetExample() {
     }
     return (
         <View>
-            <View style={{ flexDirection: 'row' }}>
-                <Button title="Sort by name" />
-            </View>
             <FlatList data={videoData} renderItem={renderItem} keyExtractor={item => item.id}
             />
         </View>
