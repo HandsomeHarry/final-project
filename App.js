@@ -16,7 +16,7 @@ const App = () => {
           <Tab.Navigator>
             <Tab.Screen name="New Video" component={NewVid} />
             <Tab.Screen name="Overview" component={Overview} />
-            <Tab.Screen name="Export/Import-Data" component={Data} />
+            <Tab.Screen name="Export Data" component={Data} />
           </Tab.Navigator>
         </NavigationContainer>
       </PersistGate>

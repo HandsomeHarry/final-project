@@ -5,8 +5,8 @@ export const videoSlice = createSlice({
   initialState: [],
   reducers: {
     addVideoData: (state, action) => state.concat(action.payload),
-    removeVideoData: (state, payload) =>
-      state.filter((item) => item.id !== payload),
+    removeVideoData: (state, action) =>
+      state.filter((item) => item.id !== action.payload),
   },
 });
 
