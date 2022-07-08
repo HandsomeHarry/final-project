@@ -22,8 +22,11 @@ export default function Data() {
   };
 
   return (
-    <View>
-      <Button title="Export Data" onPress={exportVideoData} />
+    <View style={{ paddingHorizontal: 200 }}>
+      <Text style={{ fontSize: 30, fontWeight: 'bold', margin: 10, }}>
+        Export data:
+      </Text>
+      <Button color="#3478f7" title="Export to json" onPress={exportVideoData} />
     </View>
   );
 }

@@ -57,7 +57,7 @@ export default function NewVid() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <Text style={{ fontSize: 30 }}> Enter data: </Text>
-      <View style={{ margin: 15 }}>
+      <View style={{ margin: 15, justifyContent: "space-evenly" }}>
         <View style={styles.fixToText}>
           <Text style={{ paddingVertical: 10 }}>Video title: </Text>
           <TextInput
@@ -77,10 +77,12 @@ export default function NewVid() {
         <View style={{ flex: 1, flexDirection: "row" }}>
           <View style={styles.columnCenter}>
             <Text style={{ paddingVertical: 10 }}>Translator </Text>
-            <TextInput
-              placeholder="Enter name"
-              onChangeText={(newText) => setTranslatorName(newText)}
-            />
+            <View style={{ justifyContent: "center", height: 30 }}>
+              <TextInput
+                placeholder="Enter name"
+                onChangeText={(newText) => setTranslatorName(newText)}
+              />
+            </View>
             <Text style={{ paddingVertical: 10 }}>{(earnings / 7) * 3}</Text>
           </View>
 
@@ -103,8 +105,8 @@ export default function NewVid() {
           </View>
         </View>
       </View>
-      <View>
-        <Button color="#841584" title="Add data" onPress={addVideoDataToRedux}/>
+      <View style={{ paddingHorizontal: 200 }}>
+        <Button color="#3478f7" title="Add data" onPress={addVideoDataToRedux} />
       </View>
     </SafeAreaView>
   );
